@@ -1,0 +1,123 @@
+.input-flex {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+}
+.input-flex > div {
+    width: 38%;
+    margin-left: 10%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+label {
+    text-transform: capitalize;
+    display: block;
+    font-size: 18px;
+    /* background-color: rebeccapurple; */
+}
+.input-flex > div input {
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border-radius: 30px;
+    width: 100%;
+    transition: .3s;
+    border: 2px solid transparent;
+}
+.area {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+textarea {
+    margin-top: 15px;
+    border: 2px solid transparent;
+    background-color: #f0f8ff;
+    border-radius: 30px;
+    padding: 10px;
+    outline: none;
+    height: 170px;
+    width: 85%;
+    transition: .3s;
+    text-align: left;
+}
+.input-show {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+.input-show input {
+    border: none;
+    outline: none;
+    background-color: #5e53bc;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 30px;
+    padding: 15px 45px;
+    text-align: center;
+    font-size: 18px;
+    transition: .3s;
+    margin-bottom: 20px;
+}
+.input-show input:hover
+{
+    background-color: #46caf1;
+}
+.input-flex > div input:hover,
+textarea:hover
+{
+    background-color: white;
+    border: 2px solid #5e53bc;
+}
+@media(max-width:1024px)
+{
+    .input-flex
+    {
+        flex-direction: column;
+        align-items: start;
+    
+    }
+    .input-flex > div
+    {
+        width: 60%;
+        margin: 0 0 20px 10%;
+
+        
+    }
+      textarea
+     {
+        width: 100%;
+        margin-left: 0%;
+
+     }
+    .area 
+     {
+        margin-left: 10%;
+        width: 75%;
+     }
+}
+@media(max-width:800px)
+{
+    .input-flex
+    {
+        flex-direction: row;
+        
+    
+    }
+   
+}
+@media(max-width:767px)
+{
+    .input-flex
+    {
+        flex-direction: column;
+        
+    
+    }
+   
+}

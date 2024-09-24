@@ -1,0 +1,234 @@
+.div1 >  img 
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: none;
+    position: relative;
+}
+.header .container2
+{
+    display: grid;
+    grid-template-columns: 16% 57% 24% ;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+}
+.header .container2 .div2
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.welcome
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    background-color: #eee;
+}
+.welcome img
+{
+    width: 50px;
+    height: 50px;
+}
+.welcome .text
+{
+    width: 50%;
+    text-align: center;
+}
+.welcome p,
+.welcome span
+{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.welcome p
+{
+    margin: 5px 0 5px 0;
+}
+.recent
+{
+    margin-right: 10px;
+}
+.head-recent
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    /* margin-top: 10px; */
+}
+.head-recent .icons
+{
+    display: flex;
+}
+.head-recent .icons i:first-child
+{
+    /* margin-right: 10px; */
+    font-size: 18px;
+    background-color:#04BFBF;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+.head-recent .icons i:last-child
+{
+    /* margin-right: 10px; */
+    font-size: 18px;
+    background-color:rgb(210 204 204);
+    padding: 5px;
+    color: black;
+    cursor: pointer;
+}
+.date
+{
+    background-color: #bf9a7824;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 26%;
+}
+ .date input
+{
+    outline: none;
+    border: none;
+    background: none;
+}
+.dash .date i
+{
+    margin-left: 10px;
+}
+.header .div1
+{
+    
+    display: flex;
+    /* justify-content: space-around; */
+    margin-bottom: 20px;
+    align-items: center;
+    /* margin-left: 15px; */
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.614);
+    text-transform: capitalize;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* .hide
+    {
+        display: none;
+    } */
+@media(max-width:1024px)
+{
+    .header .container2
+    {
+        grid-template-columns: 16% 47% 34% ;
+    }
+    .head-recent
+    {
+        justify-content: space-around;
+    }
+    .recent .welcome .text {
+        width: 60%;
+        font-size: 14px;
+    }
+    .h2-recent
+    {
+        margin-top: 60px;
+    }
+    .h23 {
+        margin-top: 40px;
+    }
+     .date
+    {
+        margin-left: 10px;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+     .div1
+    {
+        flex-direction: column;
+        margin-left: 5px;
+    }
+    .header .div1
+    {
+        justify-content: center;
+        align-items: self-start;
+    }
+
+}
+@media(max-width:600px)
+{
+    .none,
+    .header .div1 
+    {
+        display: none;
+    }
+   
+    .welcome
+    {
+        justify-content: end;
+    }
+    .header .container2
+    {
+        grid-template-columns: 100%;
+        justify-content: start;
+    }
+    .main-page .navbar1 .div1 span
+    {
+    
+            font-size: 16;
+            display: block;
+        
+    }
+    .date{
+        width: 70%;
+    }
+    .header .container2 .div2
+    {
+        align-items: center;
+        display: none;
+    }
+    /* .head-recent .icons
+    {
+        margin-bottom: 40px;
+    } */
+}
+@media(max-width:425px)
+{
+    .header .div2 h2
+    {
+        display: none;
+    }
+    
+    .header .div2 h2, .recnt-order h2
+    {
+        font-size: 14px;
+    }
+    .date
+    {
+        width: 90%;
+    }
+    .header .container2 {
+        grid-template-columns: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .head-recent
+    {
+        align-items: center;
+    }
+    .welcome 
+    {
+        flex-direction: row;
+    }
+    .head-recent .icons
+    {
+        margin: 0;
+    }
+}

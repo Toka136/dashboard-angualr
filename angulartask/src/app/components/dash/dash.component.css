@@ -1,0 +1,179 @@
+.dash .date i
+{
+    margin-left: 10px;
+}
+.dash .grid-divs
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    /* background-color: black; */
+    
+}
+.dash .grid-divs > div
+{
+    background-color: white;
+    width: calc((100% - 60px) / 2);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.dash .grid-divs > div i
+{
+    padding: 8px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: white;
+    margin: 10px 0 0 10px;
+    border-radius: 5px;
+}
+.color1
+{
+    font-size: 20px;
+    background-color: #038C8C;
+}
+ .color2
+{
+    font-size: 20px;
+    background-color: #04BFBF;
+
+}
+ .color3
+{
+    font-size: 20px;
+    background-color: #025159;
+
+}
+.dash .grid-divs > div .sale
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dash .grid-divs > div p
+{
+    text-transform: capitalize;
+    color: #ddd;
+}
+.dash .grid-divs > div .sale .text p
+{
+    text-transform: capitalize;
+    /* font-size: 17px; */
+    font-weight: 700;
+    margin: 10px 0 0 0 ;
+    color: black;
+}
+.dash .grid-divs > div .sale .text span
+{
+    font-size: 20px;
+    font-weight: 800;
+}
+.dash .grid-divs > div .sale .prog
+{
+    width: 90px;
+    height: 90px;
+   
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dash .grid-divs > div .sale .p44
+{
+    background: conic-gradient(#038C8C 158.4deg, white 0deg);
+}
+.dash .grid-divs > div .sale .p62
+{
+    background: conic-gradient(#038C8C 223.2deg, white 0deg);
+}
+.dash .grid-divs > div .sale .p81
+{
+    background: conic-gradient(#038C8C 291.6deg, white 0deg);
+}
+.dash .grid-divs > div .sale .prog::before
+{
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    top: 3px;
+    left: 5%;
+    border-radius: 50%;
+    
+}
+
+.dash .grid-divs > div .sale .prog span
+{
+    color: black;
+    z-index: 0;
+    font-size: 14px;
+}
+.dash .show-a
+{
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.dash .show
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #04BFBF;
+    transition: .5s;
+    padding: 15px;
+    border-radius: 10px;
+}
+.dash .show:hover
+{
+    background-color: #04BFBF;
+    color: #025159;
+}
+@media(max-width:1024px)
+{
+     .dash .grid-divs
+    {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .dash .grid-divs > div
+    {
+        width:80%;
+        column-gap: 10px;
+        margin-bottom: 10px;
+
+    }
+    .dash .grid-divs > div .sale .text span
+    {
+        font-size: 16px;
+    }
+    .dash .grid-divs > div .sale
+    {
+        flex-direction: column;
+    }
+}
+@media(max-width:800px)
+{
+    .dash .grid-divs > div
+    {
+        width: 60%;
+    }
+    
+}
+@media(max-width:424px)
+{
+    .dash .grid-divs > div
+    {
+        width: 90%;
+    }
+    
+}
+/* .style
+{
+    background: (#038C8C ${parseInt(start) * 3.6}deg, white 0deg)
+} */

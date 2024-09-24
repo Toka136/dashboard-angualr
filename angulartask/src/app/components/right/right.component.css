@@ -1,0 +1,236 @@
+.recent
+{
+    margin-right: 10px;
+}
+.head-recent
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    /* margin-top: 10px; */
+}
+.head-recent .icons
+{
+    display: flex;
+}
+.head-recent .icons i:first-child
+{
+    /* margin-right: 10px; */
+    font-size: 18px;
+    background-color:#04BFBF;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+.head-recent .icons i:last-child
+{
+    /* margin-right: 10px; */
+    font-size: 18px;
+    background-color:rgb(210 204 204);
+    padding: 5px;
+    color: black;
+    cursor: pointer;
+}
+.welcome
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    background-color: #eee;
+}
+.welcome img
+{
+    width: 50px;
+    height: 50px;
+}
+.welcome .text
+{
+    width: 50%;
+}
+.welcome p,
+.welcome span
+{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.welcome p
+{
+    margin: 5px 0 5px 0;
+}
+.recent-info
+{
+    background-color: white;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+.recent-info > div
+{
+    display: flex;
+    margin-bottom: 5px;
+    /* align-items: center; */
+}
+.recent-info > div img
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.recent-info > div span
+{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 0;
+}
+.recent-info > div p
+{
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 15px;
+    line-height: 25px;
+}
+.recent-info > div p:last-child
+{
+    color: #9E9E9E;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.dark
+{
+    color: #04BFBF;
+}
+.sales-anal
+{
+    background-color: white;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 0px;
+    padding: 10px;
+}
+.sales-anal > div
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+.sales-anal > div i
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #025159;
+    color: white;
+    font-size: 16px;
+}
+.sales-anal > div p
+{
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.sales-anal > div .second
+{
+    color: #9E9E9E;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.sales-anal .div1 .f
+{
+    font-weight: bold;
+}
+
+button
+{
+    margin-top: 20px;
+    padding: 15px;
+    
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    outline: none;
+    border: 2px dashed #04BFBF;
+    transition: .5s;
+    width: 100%;
+    font-weight: bold;
+    display: block;
+    text-transform: capitalize;
+    color: #038C8C;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s;
+    z-index: 2;
+}
+button:hover
+{
+    background-color: #038C8C;
+    color: #8C452B;
+    border: 2px dashed #04BFBF;
+    
+}
+.h2-recent
+{
+    margin-top: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.h23
+{
+    margin-top: 10px;
+}
+.new i
+{
+    margin-right: 10px;
+}
+.dash .div1 p
+{
+    margin: 0;
+}
+.recnt-order
+{
+    width: 100%;
+}
+@media(max-width:800px)
+{
+    .recent-info,
+    .sales-anal,
+    button
+    {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .h2-recent
+    {
+        text-align: center;
+    }
+}
+@media(max-width:424px)
+{
+    .recent-info,
+    .sales-anal,
+    button
+    {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .h2-recent
+    {
+        text-align: center;
+    }
+}

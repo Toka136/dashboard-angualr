@@ -1,0 +1,150 @@
+.navbar1
+{
+    background-color: #eee;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+.navbar1 > div
+{
+    display: flex;
+    /* justify-content: space-around; */
+    margin-bottom: 45px;
+    align-items: center;
+    /* margin-left: 15px; */
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.614);
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+    border-left: 4px solid transparent;
+}
+.navbar1 .div1 span
+{
+    color:#025159;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar1 > div span,
+.navbar1 > div img
+{
+    margin-right: 15px;
+}
+.navbar1 > div a
+{
+    color:#015454;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s;
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    width: 100%;
+    text-align: start;
+}
+.navbar1 > div i
+{
+    margin-right: 5px;
+    color:#a8654d;
+}
+.navbar1 > div:not(.div1):hover
+{
+    background-color: #bf9a78a0;
+    /* opacity: .5; */
+    border-left-color: #04BFBF;
+    
+}
+.navbar1 > div:not(.div1):hover a:not(.icon)
+{
+    color: #8C452B;
+}
+.navbar1 .div5
+{
+    margin-top: 100px;
+}
+@media(max-width:1024px)
+{
+      
+      .navbar1 > div i
+    {
+        margin-right: 0px;
+    }
+      .navbar1 > div 
+    {
+        padding: 5px;
+    }
+      .navbar1 .div1
+    {
+        flex-direction: column-reverse;
+        margin-left: 5px;
+    }
+    .div span,   .navbar1 > div img 
+    {
+        margin: 0;
+    }
+      .navbar1 > div
+    {
+        justify-content: center;
+    }
+}
+.bar
+{
+    position: absolute;
+    left: 15px;
+    top: 8%;
+    font-size: 30px;
+    display: none;
+}
+@media(max-width:800px)
+{
+    .navbar1 > div a:not(.icon),
+      .navbar1 .div1 span
+    {
+        font-size: 16;
+        display: none;
+    } 
+      .bar
+    {
+        display: block;
+        top: -30px;
+    }
+      .navbar1 > div
+    {
+        justify-content: start;
+        display: none;
+    }
+      .navbar1 > div a:not(.icon),
+      .navbar1 .div1 span
+    {
+        font-size: 16;
+        display: block;
+    } 
+    .navbar1 .s-d
+    {
+        display: flex;
+    }
+     
+}
+.dis
+{
+display: none;
+}
+.navbar1 .s-d
+{
+    display: flex;
+}
+.show-list
+{
+  display: flex;
+   position: absolute;
+   width: 60%;z-index:3;
+   flex-direction:column;
+   background:#eee;
+}
+.active
+{
+    background-color: #bf9a78a0;
+    border-left: 5px solid #04BFBF;
+    color: #8C452B;
+}

@@ -1,0 +1,23 @@
+.main-page
+{
+    display: grid;
+    grid-template-columns: 16% 57% 24%;
+    justify-content: space-between;
+    /* height: auto; */
+    background-color: #eee;
+    position: relative;
+}
+@media(max-width:1024px)
+{
+    .main-page
+    {
+        grid-template-columns: 12% 50% 37%;
+    }
+}
+@media(max-width:800px)
+{
+    .main-page
+    {
+        grid-template-columns: 100%;
+    }
+}
